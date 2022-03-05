@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LOGIN3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cointainer" id="cointainer">
+      <!-- <div class="form-cointainer sign-up-cointainer"> -->
+        <!-- <form action="#">
+        <h2>SIGN IN</h2>
+    <span>or use your account</span>
+    <input type="text" placeholder="name">
+    <input type="email" placeholder="email">
+    <input type="password" placeholder="password">
+    <button>SIGN IN</button>
+        </form> -->
+   <!-- </div> -->
+     <div class="form-cointainer sign-in-cointainer">
+        <form action="#">
+            <h2>SIGN IN</h2>
+         <span>or use your account</span>
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password">
+                <button>SIGN IN</button>
+ 
+</form>
+    </div>  
+       <div class="overlay-cointainer">
+             <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>WELCOME</h1>
+                    <p>its our new begning</p>
+                    <button class="press" id="signin">signin</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>WELCOME</h1>
+                    <p>welcome you all</p>
+                    <button class="press" id="signup">signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    const signUpButton=document.getElementById("signup")
+    const signInButton=document.getElementById("signin")
+    
+    const cointainer=document.getElementById("cointainer")
+
+    signUpButton.addEventListener('click',()=>{
+        cointainer.classList.add("right-panel-active");
+    })
+
+    signInButton.addEventListener('click',()=>{
+        cointainer.classList.remove("right-panel-active")
+    })
+        
+
+
+</script>
+
+
+</body>
+</html>
